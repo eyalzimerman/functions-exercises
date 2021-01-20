@@ -37,8 +37,20 @@ function myPower(x, n) {
 
 //Question 5
 function getFirstNotRepeating(str) {
-  // your code here
-  return "";
+  let newArr = [];
+  let duplicatesChars = [];
+  for (let i = 0; i < str.length; i++) {
+    if (newArr.includes(str[i])) {
+        duplicatesChars.push(str[i]);
+    } else {
+        newArr.push(str[i]);
+    }  
+  }
+  for (let j = 0; j < newArr.length; j++) {
+    if (!duplicatesChars.includes(newArr[j])) {
+      return newArr[j];
+    }
+  }
 }
 
 //Question 6 (Bonus)

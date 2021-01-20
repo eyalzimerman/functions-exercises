@@ -10,9 +10,11 @@ function myReverse(str) {
 //Question 2
 function allCombinations(str) {
   let combinations = [];
-  // your code here
-
-  //
+  for(let i = 0; i < str.length; i++) {
+    for(let j = i + 1; j < str.length + 1; j++) {
+        combinations.push(str.slice(i, j));
+    }
+}
   return combinations;
 }
 

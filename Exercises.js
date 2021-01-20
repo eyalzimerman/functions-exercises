@@ -20,8 +20,13 @@ function allCombinations(str) {
 
 //Question 3
 function allCaps(str) {
-  // your code here
-  return "";
+  let arr = str.split(" ");
+  let newStr = "";
+  for (let i = 0; i < arr.length; i++) {
+    newStr = newStr + arr[i][0].toUpperCase() + arr[i].slice(1) + " ";
+  }
+  newStr = newStr.slice(0, newStr.length -1);
+  return newStr;
 }
 
 //Question 4

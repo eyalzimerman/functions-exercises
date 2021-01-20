@@ -31,8 +31,8 @@ function allCaps(str) {
 
 //Question 4
 function myPower(x, n) {
-  // your code here
-  return "";
+  let newNumber = Math.pow(x, n);
+  return newNumber;
 }
 
 //Question 5
